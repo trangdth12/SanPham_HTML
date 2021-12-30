@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel=" shortcut icon" href="../icon.jpg">
+</head>
+<script type="text/javascript">
+    function signin() {
+        const user_name = document.getElementById('user_name');
+        const pass = document.getElementById('pass');
+
+        // if (user_name == '' || pass == '') {
+        //     alert("Vui lòng nhập đầy đủ thông tin");
+        // }
+
+        if (
+            (localStorage.getItem('user') == user_name.value) && (localStorage.getItem("password") == pass.value)
+        ) {
+            localStorage.setItem("signincheck", "true");
+            alert("Đăng nhập thành công! Hệ thống sẽ đưa bạn về trang chủ");
+            window.location = "./index.html"
+        } else {
+            alert("Sai tên đăng nhập hoặc mật khẩu");
+        };
+
+    }
+</script>
+
+<body>
+    <div id="nd1">
+        <table border="1px" width="400px" align="center" bgcolor="white">
+            <tr align="center">
+                <td>
+                    <table>
+                        <th colspan="2">
+                            <p style="font-weight: bolder; font-size: 25px;"><b>ĐĂNG NHẬP</b></p>
+                        </th>
+                        <tr>
+                            <td>Tên đăng nhập: </td>
+                            <td>
+                                <input type="text" name="" placeholder="Tài khoản" class="signin" id="user_name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mật khẩu: </td>
+                            <td>
+                                <input type="password" name="" placeholder="Mật khẩu" class="signin" id="pass">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button style="border-radius: 4px; background-color: lightpink; width: 100px; height: 50px;" class="signin-button" onclick="signin()">ĐĂNG NHẬP</button>
+                                <button style="border-radius: 4px; background-color: lightpink; width: 100px; height: 50px;" onclick="window.location.href='dangky.html'">ĐĂNG KÝ</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+
+</body>
+
+</html>

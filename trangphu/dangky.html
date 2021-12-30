@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel=" shortcut icon" href="../icon.jpg">
+    <style type="text/css">
+        #dk {
+            font-size: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        function dangki() {
+            const username = document.getElementById('username');
+            const user = document.getElementById('user');
+            const password = document.getElementById('password');
+            const password2 = document.getElementById('password2');
+
+            var flag = false;
+            // if (username == '' || user == '' || password == '' || password2 == '') {
+            //     alert("Vui lòng nhập đầy đủ thông tin");
+            // }
+
+            if ((user.value.length > 7) &&
+                (user.value.length < 17) &&
+                (password.value.length > 3) &&
+                (password2.value == password.value)) {
+                flag = true
+            }
+            if (flag == true) {
+                username_data = username.value;
+                localStorage.setItem("username", username_data);
+
+                user_data = user.value;
+                localStorage.setItem("user", user_data);
+
+                password_data = password.value;
+                localStorage.setItem("password", password_data);
+                alert("Đăng kí thành công, hệ thống sẽ đưa bạn đến trang đăng nhập");
+                window.location = "dangnhap.html";
+            } else {
+                alert('Đăng kí không thành công! xin hãy thử lại')
+            };
+        };
+    </script>
+
+    <body>
+        <div id="nd1">
+
+            <table border="1px" width="500px" align="center" bgcolor="white">
+                <tr align="center">
+                    <td>
+                        <table>
+                            <tr>
+                                <th colspan="2">
+                                    <p style="font-weight: bolder; font-size: 25px"><b>ĐĂNG KÝ</b></p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td id="dk">Họ tên</td>
+                                <td>
+                                    <input type="text" placeholder="Tên người dùng" id="username">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="dk">Tài khoản</td>
+                                <td>
+
+                                    <input type="text" placeholder="Tài khoản" id="user">
+                                    <p style="font-size: 15px; margin-left: 10%; color: red; margin-top: 10px; margin-bottom: 10px;">Tên tài khoản từ 8-16 kí tự</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="dk">Mật khẩu</td>
+                                <td>
+                                    <input type="password" placeholder="Mật khẩu" id="password">
+                                    <p style="font-size: 15px; margin-left: 10%; color: red; margin-top: 10px; margin-bottom: 10px;">Mật khẩu phải trên 4 kí tự</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="dk">Nhập lại mật khẩu</td>
+                                <td>
+                                    <input type="password" placeholder="Nhập lại mật khẩu" id="password2">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" align="center" id="dk">
+                                    <button style="border-radius: 4px; background-color: lightpink; width: 100px; height: 50px;" type="submit" onclick=" return dangki();">ĐĂNG KÝ</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </body>
+
+</html>

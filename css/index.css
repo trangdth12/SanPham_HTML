@@ -1,0 +1,250 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        background-image: url(../Picture/000.gif);
+        background-repeat: repeat;
+        background-size: 100% 100%;
+    }
+    
+    #menu {
+        background: #fbe5d6;
+        margin: 20px auto;
+        border-radius: 10px;
+        width: 1240px;
+    }
+    
+    #logo {
+        margin: 0 0 0 40px;
+        float: left;
+    }
+    
+    .main {
+        background: #f6cef5;
+        width: 1000px;
+        border-radius: 10px;
+        min-height: 20px;
+        ;
+    }
+    
+    #tk {
+        padding: 14px;
+        float: right;
+        background: url(../Picture/tk.png) no-repeat 240px;
+        background-size: 43px;
+        background-color: #e78ea3;
+        border-radius: 10px;
+        height: 20px;
+        width: 260px;
+        float: right;
+        cursor: pointer;
+    }
+    
+   /* #tk {
+        background-color: #e78ea3;
+        color: brown;
+        font-weight: bold;
+        font-style: italic;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 10px;
+        height: 20px;
+        width: 260px;
+        float: right;
+        cursor: pointer;
+    }*/
+    
+    .clear {
+        clear: both;
+    }
+    
+    .main ul li:hover {
+        background: #848484;
+    }
+    
+    .main>ul>li {
+        list-style: none;
+        float: left;
+        padding: 10px 35px;
+        position: relative;
+        border-right: 1px inset white;
+    }
+    
+    .main>ul>li:last-child {
+        border-right: none;
+        padding: 10px 53px;
+    }
+    
+    .main ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #9c0f0f;
+        font-size: 25px;
+    }
+    
+    .main ul li ul {
+        display: none;
+        position: absolute;
+        background: #f6cef5;
+        top: 48px;
+        left: 0px;
+        width: 150px;
+    }
+    
+    .main ul li:hover>ul {
+        display: block;
+    }
+    /*-----------------------Cấp 2*/
+    
+    .main ul li ul li {
+        list-style: none;
+        position: relative;
+    }
+    
+    .main ul li ul li a {
+        text-decoration: none;
+    }
+    
+    .main>ul>li>ul>li {
+        padding: 5px;
+        border-bottom: 1px inset white;
+    }
+    
+    .main>ul>li>ul>li:first-child {
+        border-top: 1px inset white;
+    }
+    
+    .main ul>li>ul>li:hover>ul {
+        display: block;
+    }
+    /*------------------------------Dạng hoa cấp3*/
+    
+    .main ul>li>ul>li>ul {
+        display: none;
+        position: absolute;
+        background: #f6cef5;
+        top: 0px;
+        left: 132px;
+        width: 280px;
+    }
+    
+    .main>ul>li>ul>li>ul>li {
+        padding: 5px 10px;
+        border-bottom: 1px inset white;
+        border-right: 1px outset violet;
+        border-left: 1px outset violet;
+    }
+    /*--------------------------------------cấp 4*/
+    
+    .chuchay1 {
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    
+    .the {
+        padding: 5px 5px;
+        width: 900px;
+        background-color: violet;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 10px;
+        border-style: 0px solid;
+        font-weight: bold;
+        color: brown;
+    }
+    
+    .box {
+        width: 425px;
+        float: left;
+        border: 1px solid #333;
+        margin: 0px 5px;
+        border-radius: 5px;
+    }
+    
+    .button {
+        background-color: violet;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        color: white;
+        padding: 0 5px;
+    }
+    
+    .box a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .box a:hover {
+        color: yellow;
+    }
+    
+    .menu1 {
+        padding-left: 10px;
+        background-color: #f6cef5;
+        border-radius: 10px;
+        width: 230px;
+        float: left;
+    }
+    
+    .menu1 ul li {
+        padding: 5px 5px;
+        list-style: none;
+    }
+    
+    .menu1 ul li a {
+        text-decoration: none;
+        color: #9c0f0f;
+    }
+    
+    .menu1 ul li a:hover {
+        color: red;
+    }
+    
+    div#nd {
+        font-size: 18px;
+        margin: 10 0 0 150px;
+        padding: 0px 300px;
+        width: 900px;
+        text-align: justify;
+        /*	list-style-position: inside;*/
+    }
+    
+    #nd h1 {
+        text-align: center;
+    }
+    
+    #nd p {
+        text-indent: 10px;
+    }
+    
+    #nd1 {
+        margin-top: 200px;
+        margin-left: 700px;
+    }
+    /*-----------------------------------cap hoa hong-------------*/
+    
+    #pp_hhl {
+        text-align: center;
+        border: 2px solid black;
+    }
+    
+    #pp_hhl td {
+        text-align: justify;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    #pp_hhb td {
+        text-align: justify;
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+    /*-=-------------------------------------cap hoa cuc-------------*/
+    
+    .anhhoa img {
+        width: 300px;
+        height: 200px;
+        padding: 0px 5px;
+    }
